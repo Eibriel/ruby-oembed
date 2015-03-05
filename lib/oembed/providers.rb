@@ -293,6 +293,12 @@ module OEmbed
     Skitch << "https://*.skitch.com/*"
     add_official_provider(Skitch)
 
+    # Provider for monitor.eibriel.com
+    # http://monitor.eibriel.com/54f317ef7ff6a915d864496a
+    EMonitor = OEmbed::Provider.new("http://monitor.eibriel.com/api/job/oembed")
+    EMonitor << "http://monitor.eibriel.com/*"
+    add_official_provider(EMonitor)
+    
     ## Provider for clikthrough.com
     # http://corporate.clikthrough.com/wp/?p=275
     #Clickthrough = OEmbed::Provider.new("http://www.clikthrough.com/services/oembed/")
